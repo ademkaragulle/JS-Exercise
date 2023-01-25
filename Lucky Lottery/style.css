@@ -11,13 +11,14 @@ h1 {
     text-align: center;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
     flex-direction: row;
 }
 
 
-.flex-container div, #winning div{
+.flex-container div,
+#winning div {
     width: 50px;
     background-color: rgb(194, 228, 0);
     float: left;
@@ -34,8 +35,8 @@ button {
     border: 1px solid #393939;
     color: #393939;
     background-color: rgb(55, 154, 253);
-    text-align: center; 
-
+    text-align: center;
+    cursor: pointer;
 }
 
 button:hover {

@@ -24,11 +24,11 @@ function gl() {
             let txt1 = txt[j].innerText
             if (mathR == txt1) {
                 txt[j].classList.add("active")
-                if(array.length<6){
+                if (array.length < 6) {
                     array.push(mathR)
                     console.log(array)
-                    document.getElementById('winning').innerHTML=array
-                } 
+                    document.getElementById('winning').innerHTML = array
+                }
             }
             let classAc = document.getElementsByClassName('active').length
             if (classAc == 7 && mathR == txt1) {
@@ -44,9 +44,11 @@ function gl() {
 
 function rf() {
     let aclengt = document.getElementsByClassName('active').length
-    for (i = 0; i < aclengt-1; i++) {
+    for (i = 0; i < aclengt; i++) {
         let adem = document.querySelector('.active')
         adem.classList.remove('active')
+        document.getElementById('winning').innerText = ''
+        array = []
     }
 }
 

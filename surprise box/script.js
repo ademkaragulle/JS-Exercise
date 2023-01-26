@@ -64,16 +64,16 @@ boxes.addEventListener('click', function (e) {
         money[23].classList.add('open')
     }
     if (adem.length % 3 == 1 && adem.length !== 1) {
-        toplam = 0
+        let offer = 0
         for (var i = 1; i < fatma.length; i++) {
-            toplam += Number(fatma[i]) / (fatma.length);
-            toplam = Math.floor(toplam)
+            offer += Number(fatma[i]) / (fatma.length);
+            offer = Math.floor(offer)
         }
-        document.getElementById('smith').innerHTML = `<h1>Mr. Smith: ${toplam} $</h1>`
-        if (confirm(toplam) == true) {
-            alert(`Kazandınız = ${toplam}`)
-        } else {
-            console.log(document.getElementsByClassName('selected')[0].id)
+        document.getElementById('smith').innerHTML = `<h1>Mr. Smith: ${offer} $</h1>`
+        if (confirm(offer) == true) {
+            alert(`Kazandınız = ${offer}
+Kutunuzdaki para ${document.getElementsByClassName('selected')[0].id}`)
+            window.location.reload()
         }
     }
 

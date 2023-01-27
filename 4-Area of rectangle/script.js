@@ -4,13 +4,14 @@ function button() {
     let long = Number(document.getElementById('long').value)
 
     if (isNaN(short)) {
-        console.log(typeof(sort))
+        console.log(typeof (sort))
         alert('pls enter the number')
     } else {
         if (isNaN(long)) {
             alert('pls enter the number')
         } else {
-            alert(short * long)
+            alert(`Area= ${short * long}
+circumference = ${2 * short + 2 * long}`)
         }
     }
 }

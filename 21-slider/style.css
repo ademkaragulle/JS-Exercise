@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+button:focus {outline: 0;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .6s linear;
+}
+
+.slide .inner {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    background-color: rgba(0, 0, 0, .8);
+    color: #eee;
+    padding: 40px 30px;
+    opacity: 0;
+}
+
+.slide.active .inner {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
+
+.slide:nth-child(1) {
+    background: url('./img/image1.jpg') no-repeat center/cover
+}
+
+.slide:nth-child(2) {
+    background: url('./img/image2.jpg') no-repeat center/cover
+}
+
+.slide:nth-child(3) {
+    background: url('./img/image3.jpg') no-repeat center/cover
+}
+
+.slide:nth-child(4) {
+    background: url('./img/image4.jpg') no-repeat center/cover
+}
+
+.slide:nth-child(5) {
+    background: url('./img/image5.jpg') no-repeat center/cover
+}
+
+
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: default;
+}
+
+.indicators button {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, .7);
+    color: #eee;
+    border: 0;
+    cursor: pointer;
+}

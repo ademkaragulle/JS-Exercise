@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logın</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="conMid">
+        <div id="rotate" class="card text-center">
+            <div id="entered" class="card-body">
+                <div onclick="info()" class="btn btn-primary" id="info">i</div>
+                <h4 class="text-center mb-4">Login</h4>
+                <form action="" method="get"></form>
+                <input onkeyup="formInput()" type="text" name="" id="userName" class="form-control my-2"
+                    placeholder="ID">
+                <input onkeyup="formInput()" type="password" name="" id="password" class="form-control"
+                    placeholder="Password">
+                <div id="submit">
+                    <input type="submit" id="submitBtn" value="Login" class="btn btn-primary">
+                </div>
+                <a href="#" style="font-size: 10px;">Sign Up</a>
+                </form>
+                <div id="warning" class="my-2" style="font-size: 12px;">please enter ID and Password</div>
+            </div>
+        </div>
+        <div class="bg-primary" id="infoWar">ID: admin Password: 123</div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

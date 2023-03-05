@@ -1,0 +1,70 @@
+body {
+    background-color: #a4a4a4;
+}
+
+#submit {
+    position: relative;
+    background-color: #e3e3e3;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    margin-top: 8px;
+    height: 46px;
+}
+
+#submitBtn {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: 3px;
+    padding: 4px 15px;
+}
+
+#conMid {
+
+    height: 280px;
+    width: 400px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+    left: 36%;
+    /* transform: translateY(50%); */
+
+}
+
+.btnB{
+    width:97%;
+    left:0px;
+}
+
+#info {
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+#infoWar {
+    /* position: absolute; */
+    opacity: 0%;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    color: aliceblue;
+    top: 28%;
+    left: 59%;
+}
+
+.bg {
+    background-color: rgb(93, 93, 255);
+}
